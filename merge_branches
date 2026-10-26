@@ -1,0 +1,19 @@
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+$ git merge bug-fix-typo
+Already up to date.
+$ git reflog -10
+44d881f HEAD@{0}: checkout: moving from main to main
+44d881f HEAD@{1}: commit: Clean up pull request evidence
+693989f HEAD@{2}: commit: Add pull request verification evidence
+6400a1c HEAD@{3}: commit: Add branch status evidence
+eaf7afd HEAD@{4}: merge bug-fix-typo: Fast-forward
+ad95b0a HEAD@{5}: checkout: moving from bug-fix-typo to main
+eaf7afd HEAD@{6}: commit: Fix typo in simple-interest script
+ad95b0a HEAD@{7}: checkout: moving from main to bug-fix-typo
+ad95b0a HEAD@{8}: clone: from https://github.com/SwarajLanghe/mcino-Introduction-to-Git-and-GitHub.git
+$ git show --stat --oneline eaf7afd
+eaf7afd Fix typo in simple-interest script
+ simple-interest.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
